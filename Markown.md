@@ -1,6 +1,12 @@
 <style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40px;
+    line-height: 1.6;
+    color: #333;
+}
+h1, h2, h3 {
+    color: #354458;
 }
 </style>
 # <u>Presentation of basic DL commands</u>
