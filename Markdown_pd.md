@@ -112,3 +112,27 @@ Note that map() and apply() return new, transformed Series and DataFrames, respe
 data.groupby('col_name1').col_name2.count()
 data.groupby(['col_name1']).col_name2.agg([len, min, max])
 ```
+
+# <u>Renaming and combining</u>
+## <p style='color:blue'>1. Renaming</p>
+```python
+# rename a columns:
+data.rename(columns={'old_name': 'new_name'})
+# rename an index:
+data.rename(index={0: 'firstEntry', 1: 'secondEntry'})
+```
+
+# <u>Renaming and combining</u>
+## <p style='color:blue'>1. Combining</p>
+```python
+# Concatenation:
+data_1 = pd.read_csv("link_1")
+data_2 = pd.read_csv("link_2")
+data_concat = pd.concat([data_1, data_2])
+
+# Joining
+left = pd.read_csv("link_left")
+right = pd.read_csv("link_right")
+
+data_join = left.join(right)
+```
